@@ -204,16 +204,19 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
-.card {
-  border: 1px solid rgba(229,231,235,.95);
-  background: rgba(255,255,255,.92);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
 .card .card-img {
   height: 160px;
-  background: #eaeaea;
+  overflow: hidden;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  background: #f3f4f6;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* this is the magic */
+  display: block;
 }
 .card .card-body {
   padding: 16px 16px 18px;
