@@ -205,19 +205,19 @@ h1 {
   gap: 16px;
 }
 .card .card-img {
-  height: 160px;
-  overflow: hidden;
-  border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
-  background: #f3f4f6;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card .card-img img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;   /* changed from cover */
-  background: #f3f4f6;   /* fills empty space neatly */
-  padding: 10px;         /* optional breathing room */
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  display: block;
 }
 .card .card-body {
   padding: 16px 16px 18px;
