@@ -308,3 +308,16 @@ textarea { min-height: 140px; resize: vertical; }
   }
   .nav-links.open { display: flex; }
 }
+
+.grid-2,
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
