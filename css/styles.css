@@ -376,3 +376,39 @@ textarea { min-height: 140px; resize: vertical; }
     margin: 0 24px 24px;
   }
 }
+/* Services page images - desktop only */
+@media (min-width: 769px) {
+  .service-detail-img {
+    background: #f6f3ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-detail-img img {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+}
+
+/* Hero / logo image */
+.hero-img,
+.hero-image,
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img img,
+.hero-image img,
+.hero-visual img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
