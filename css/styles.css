@@ -530,3 +530,49 @@ hr.sep {
   margin: 0;
   color: rgba(107,114,128,.95);
 }
+/* ===============================
+   KNOWLEDGE LIBRARY
+================================ */
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.library-card {
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(229,231,235,.95);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.library-card.featured {
+  background: linear-gradient(135deg, rgba(17,24,39,.98), rgba(17,24,39,.92));
+  color: #fff;
+}
+
+.library-card.featured p {
+  color: rgba(255,255,255,.78);
+}
+
+.library-card h3 {
+  margin: 0 0 8px;
+}
+
+.library-card p {
+  margin: 0 0 12px;
+  color: rgba(107,114,128,.95);
+}
+
+.series-label {
+  display: inline-flex;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(192,138,45,.18);
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
