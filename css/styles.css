@@ -495,3 +495,38 @@ hr.sep {
     margin: 0 24px 24px;
   }
 }
+.value-journey {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.journey-step {
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(229,231,235,.95);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.step-number {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.journey-step h3 {
+  margin: 0 0 8px;
+}
+
+.journey-step p {
+  margin: 0;
+  color: rgba(107,114,128,.95);
+}
