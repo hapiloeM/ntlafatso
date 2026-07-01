@@ -576,3 +576,54 @@ hr.sep {
   font-size: 13px;
   margin-bottom: 10px;
 }
+/* ===============================
+   LEARNING STORE
+================================ */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.pricing-card {
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(229,231,235,.95);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.pricing-card.featured {
+  border-color: rgba(192,138,45,.45);
+  background: linear-gradient(135deg, rgba(192,138,45,.14), rgba(255,255,255,.96));
+}
+
+.price-tag {
+  display: inline-flex;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(17,24,39,.06);
+  color: rgba(17,24,39,.82);
+  font-weight: 900;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.pricing-card h3 {
+  margin: 0 0 8px;
+}
+
+.pricing-card p {
+  margin: 0 0 12px;
+}
+
+.pricing-card ul {
+  margin: 10px 0 16px;
+  padding-left: 18px;
+  color: rgba(17,24,39,.76);
+}
+
+.pricing-card li {
+  margin: 6px 0;
+}
